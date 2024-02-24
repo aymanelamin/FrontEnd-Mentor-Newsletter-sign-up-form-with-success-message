@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: inherit;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: hsl(234, 29%, 20%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#mainContainer {
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(0, 0%, 100%);
+    width: 68%;
+    padding: 2% 2%;
+    border-top-left-radius: 2.5vw;
+    border-bottom-left-radius:2.5vw ;
+    border-top-right-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+}
+
+#leftContainer {
+    padding: 5%;
+}
+
+#mainHeading {
+    font-size: 4vw;
+    font-weight: 700;
+    color: hsl(234, 29%, 20%);
+    margin: 3% 0 4.5% 0;
+}
+
+#mainParagraph {
+    margin-right: 6%;
+    margin-bottom: 5%;
+}
+
+p {
+    color: hsl(235, 18%, 26%);
+    font-weight: 400;
+}
+
+.listItem {
+    display: flex;
+    margin-bottom: 3%;
+    padding-right: 5%;
+}
+
+.iconList {
+    margin-right: 3.5%;
+}
+
+#thirdItem {
+    margin-bottom: 9%;
+}
+
+label {
+    color: hsl(234, 29%, 20%);
+    font-weight: 700;
+    font-size: .85vw;
+}
+
+#emailContainer {
+    margin: 2% 0 5% 0;
+    width: 87%;
+    padding: 3.5% 0 3.5% 4.5%;
+    border-radius: .5vw;
+    border-style: solid;
+    border-width: thin;
+    cursor: pointer;
+    color: hsl(234, 29%, 20%);
+    outline: none;
+}
+
+::placeholder {
+    color: hsl(231, 7%, 60%);
+}
+
+#theButton {
+    width: 87%;
+    padding: 4% 0; 
+    text-align: center;
+    border-radius: .5vw;
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    cursor: pointer;
+}
+
+#theButton:hover {
+    background-color: hsl(4, 100%, 67%);
+    box-shadow:10px 15px hsl(4, 100%, 80%, .1) ;
+}
+
+#mainImage {
+    width: 41.5%;
+}
+
+#label2 {
+    color: hsl(4, 100%, 67%);
+    margin-left: 45%;
+    display: none;
+}
+
+#mainContainer2 {
+    display: none;
+    background-color: hsl(0, 0%, 100%);
+    width: 33%;
+    border-top-left-radius: 2.5vw;
+    border-bottom-left-radius:2.5vw ;
+    border-top-right-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+}
+
+#iconSuccess {
+    margin: 7% 0 0 10%;
+}
+
+#successHeading {
+    font-size: 3.9vw;
+    font-weight: 700;
+    color: hsl(234, 29%, 20%);
+    margin: 7% 0 0 10%;
+    line-height: 3.7vw;
+    
+}
+
+#successParagraph {
+    margin: 8%;
+    color: hsl(235, 18%, 26%);
+    font-weight: 400;
+    margin: 6% 10% 0 10%;
+    line-height: 1.6vw;
+}
+
+#successButton {
+    width: 80%;
+    padding: 4% 0; 
+    margin: 8% 10% 13% 10%;
+    border-radius: .5vw;
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    cursor: pointer;
+}
+
+#successButton:hover {
+    background-color: hsl(4, 100%, 67%);
+    box-shadow:10px 15px hsl(4, 100%, 80%, .1) ;
+}
+
+#mySpan {
+    font-weight: 700;
+    color:hsl(234, 29%, 20%) ;
+}
+
+#sign-up-mobile {
+    display: none;
+}
+
+
+@media screen and (max-width:700px) {
+    #sign-up-mobile {
+        display: block;
+        width: 100%;
+    }
+
+    #mainImage {
+        display: none;
+    }
+
+    body {
+        display: block;
+        height: 100%;
+        
+    }
+
+    #mainContainer {
+        width: 100%;
+        box-shadow: 0 -25px white;
+        z-index: -1;
+        border-top-left-radius: 2.5vw;
+        border-bottom-left-radius:2.5vw ;
+        border-top-right-radius: 2vw;
+        border-bottom-right-radius: 2vw;
+    }
+
+
+    #mainHeading {
+        font-size: 11vw;
+        margin: 2% 0 5% 0;
+    }
+
+    label {
+        font-size: 2.8vw;
+    }
+
+    #emailContainer {
+        margin: 2% 0 5% 0;
+        width: 98%;
+        padding: 3.5% 4.5% 3.5% 4.5%;
+        border-radius: 1.8vw;
+    }
+
+    #theButton {
+        width: 98%;
+        padding: 4% 0; 
+        border-radius: 1.8vw;
+    }
+
+    #mainContainer2 {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    #iconSuccess {
+        margin: 38% 0 0 7%;
+    }
+
+    #successHeading {
+        font-size: 10.5vw;
+        margin: 7% 0 0 7%;
+        line-height: 10.5vw;
+        
+    }
+    
+    #successParagraph {
+        margin: 8%;
+        margin: 6% 10% 45% 7%;
+        line-height: 7vw;
+    }
+    
+    #successButton {
+        width: 86%;
+        padding: 4% 0; 
+        margin: 8% 7% 13% 7%;
+        border-radius: 1.5vw;
+        
+        
+    }
+
+    
+}
